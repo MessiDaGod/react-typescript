@@ -1,16 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
+import Login from "../components/Login";
 
-const App: React.FC<{ compiler: string, framework: string }> = (props) => {
-  return (
-    <div>
-      <div>{props.compiler}</div>
-      <div>{props.framework}</div>
-    </div>
-  );
-}
+const App: React.FC = () => {
+  return <div>
+
+  </div>;
+};
 
 ReactDOM.render(
-  <App compiler="TypeScript" framework="React" />,
+  <>
+    <App />
+    <Login />
+  </>,
   document.getElementById("root")
 );

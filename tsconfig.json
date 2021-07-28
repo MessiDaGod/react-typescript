@@ -13,7 +13,11 @@
     ]
   },
   "include": [
-    "src"
+    "./src/**/*",
+    "./public/**/*"
   ],
-  "compileOnSave": false
+  "exclude": [
+    "node_modules"
+  ],
+  "compileOnSave": true
 }
